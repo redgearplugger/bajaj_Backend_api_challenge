@@ -9,7 +9,9 @@ app.post("/bfhl", (req, res) => {
   let alpha=[];
   let odd=[];
   let even=[];
+  JSON.parse(JSON.stringify(req.body));
   let arr=req.body.data;
+
   for(let ele of arr){
     if(isNaN(ele)){
       alpha.push(ele.toUpperCase());
