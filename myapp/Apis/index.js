@@ -3,7 +3,7 @@ const database =require("../database");
 
 const challenge = express();
 
-challenge.post("/:userid", async(request,response)=>{
+challenge.post("/bfhl", async(request,response)=>{
  try{
     
      const  get=[...request.body.data];
