@@ -70,7 +70,7 @@ else{
   
 
  }catch(error){
-         return response.status(500).json({error:message.error})
+         return response.status(500).json({error:error})
  }
 
 };
