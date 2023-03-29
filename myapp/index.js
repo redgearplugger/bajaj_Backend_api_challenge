@@ -21,9 +21,9 @@ app.post("/bfhl", (req, res) => {
   }
   res.send({
     "is_success":true,
-    "user_id":"dhairya_taneja_12102002",
-    "email":"dhairya0192.be20@chitkara.edu.in",
-    "roll_number":2010990192,
+    "user_id":"Anshul_Saini_11012003",
+    "email":"anshul0095.be20@chitkara.edu.in",
+    "roll_number":2010990095,
     "odd_numbers":odd,
     "even_numbers":even,
     "alphabets":alpha
