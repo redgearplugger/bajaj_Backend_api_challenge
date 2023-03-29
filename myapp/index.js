@@ -2,8 +2,11 @@ const express=require("express");
 const challenge=require("./Apis/index");
 const app=express();
 
-app.use("/",challenge);
+const createAndStartServer=()=>{
+    app.post('/bfhl',challenge);
+    app.listen(3000,()=>{
+        console.log("server is running");
+    })
+}
 
-app.listen(3000,()=>{
-    console.log("server is running");
-})
+createAndStartServer();

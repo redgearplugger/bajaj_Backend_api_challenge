@@ -1,9 +1,10 @@
 const express=require("express");
 const database =require("../database");
 
-const challenge = express();
 
-challenge.post("bfhl", async(request,response)=>{
+
+
+const challenge =async(request,response)=>{
  try{
     
      const  get=[...request.body.data];
@@ -72,6 +73,6 @@ else{
          return response.status(500).json({error:message.error})
  }
 
-});
+};
 
 module.exports=challenge;
