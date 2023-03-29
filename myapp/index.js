@@ -19,7 +19,7 @@ app.post("/bfhl", (req, res) => {
       odd.push(ele);
     }
   }
-  res.send({
+  res.status(200).json({
     "is_success":true,
     "user_id":"Anshul_Saini_11012003",
     "email":"anshul0095.be20@chitkara.edu.in",
